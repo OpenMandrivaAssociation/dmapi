@@ -1,6 +1,6 @@
 %define	name	dmapi
 %define	version	2.2.5
-%define	release	%mkrel 2
+%define	release	%mkrel 3
 
 %define lib_name_orig	libdm
 %define lib_major	0
