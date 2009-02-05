@@ -1,6 +1,6 @@
 %define	name	dmapi
-%define	version	2.2.5
-%define	release	%mkrel 4
+%define	version	2.2.9
+%define	release	%mkrel 1
 
 %define lib_name_orig	libdm
 %define lib_major	0
@@ -10,7 +10,7 @@ Summary:	Data Management API runtime environment
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
-Source0:	ftp://oss.sgi.com/projects/xfs/download/cmd_tars/%{name}_%{version}-1.tar.bz2
+Source0:	ftp://oss.sgi.com/projects/xfs/download/cmd_tars/%{name}-%{version}.tar.gz
 License:	GPL
 Group:		System/Kernel and hardware
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
