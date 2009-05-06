@@ -5,9 +5,9 @@
 
 Summary:	Data Management API runtime environment
 Name:		dmapi
-Version:	2.2.9
-Release:	%mkrel 2
-Source0:	ftp://oss.sgi.com/projects/xfs/download/cmd_tars/%{name}-%{version}.tar.gz
+Version:	2.2.10
+Release:	%mkrel 1
+Source0:	ftp://oss.sgi.com/projects/xfs/cmd_tars/%{name}-%{version}.tar.gz
 License:	LGPLv2 and GPLv2
 Group:		System/Kernel and hardware
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -52,7 +52,6 @@ the dmapi (runtime) package and the xfsprogs-devel package.
 %setup -q
 
 %build
-aclocal && autoconf
 %configure2_5x --libdir=/%{_lib}
 %make
 
