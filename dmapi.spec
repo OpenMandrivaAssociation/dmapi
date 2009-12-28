@@ -6,7 +6,7 @@
 Summary:	Data Management API runtime environment
 Name:		dmapi
 Version:	2.2.10
-Release:	%mkrel 1
+Release:	%mkrel 2
 Source0:	ftp://oss.sgi.com/projects/xfs/cmd_tars/%{name}-%{version}.tar.gz
 License:	LGPLv2 and GPLv2
 Group:		System/Kernel and hardware
