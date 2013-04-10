@@ -1,4 +1,4 @@
-%define libname_orig	libdm
+%define oname	libdm
 %define major	0
 %define libname	%mklibname dm %{major}
 %define devname	%mklibname -d dm 
@@ -23,21 +23,20 @@ X/Open document:  Systems Management: Data Storage Managment
 by the libdm library.
 
 %package -n	%{libname}
-Summary:	Main library for %{libname_orig}
+Summary:	Main library for %{oname}
 Group:		System/Libraries
-Provides:	%{libname_orig} = %{version}-%{release}
+Provides:	%{oname} = %{version}-%{release}
 
 %description -n	%{libname}
 This package contains the library needed to run programs dynamically
-linked with %{libname_orig}.
+linked with %{oname}.
 
 %package -n	%{devname}
 Summary:	Data Management API static libraries and headers
 Group:		Development/C
 Requires:	%{libname} = %{version}
-Provides:	%{libname_orig}-devel = %{version}-%{release}
+Provides:	%{oname}-devel = %{version}-%{release}
 Provides:	dm-devel = %{version}-%{release}
-Provides:	libdm0-devel = %{version}-%{release}
 
 %description -n	%{devname}
 dmapi-devel contains the libraries and header files needed to
@@ -68,7 +67,7 @@ rm -f %{buildroot}/%{_lib}/*.*a
 chmod 0755 %{buildroot}/%{_lib}/libdm.so.*
 
 %files -n %{libname}
-/%{_lib}/*.so.%{major}*
+/%{_lib}/libdm.so.%{major}*
 
 %files -n %{devname}
 %doc doc/PORTING doc/CHANGES.gz doc/COPYING README
