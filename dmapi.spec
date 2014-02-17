@@ -72,6 +72,7 @@ chmod 0755 %{buildroot}/%{_lib}/libdm.so.*
 %files -n %{devname}
 %doc doc/PORTING doc/CHANGES.gz doc/COPYING README
 /%{_lib}/*.so
+%{_libexecdir}/libdm.so
 %{_libdir}/*.so
 %{_mandir}/man3/*
 %{_includedir}/*/*
