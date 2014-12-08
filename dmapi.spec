@@ -49,7 +49,7 @@ the dmapi (runtime) package and the xfsprogs-devel package.
 
 %build
 make configure
-%configure2_5x \
+%configure \
 	--disable-static \
 	--libdir=/%{_lib} 
 
@@ -72,7 +72,7 @@ chmod 0755 %{buildroot}/%{_lib}/libdm.so.*
 %files -n %{devname}
 %doc doc/PORTING doc/CHANGES.gz doc/COPYING README
 /%{_lib}/*.so
-%{_libdir}/*.so
+%{_libexecdir}/*.so
 %{_mandir}/man3/*
 %{_includedir}/*/*
 
