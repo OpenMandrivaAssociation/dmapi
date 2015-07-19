@@ -6,7 +6,7 @@
 Summary:	Data Management API runtime environment
 Name:		dmapi
 Version:	2.2.12
-Release:	4
+Release:	5
 License:	LGPLv2 and GPLv2
 Group:		System/Kernel and hardware
 URL:		http://oss.sgi.com/projects/xfs/
