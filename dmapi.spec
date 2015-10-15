@@ -2,6 +2,8 @@
 %define major	0
 %define libname	%mklibname dm %{major}
 %define devname	%mklibname -d dm 
+%define _disable_lto 1
+%define _disable_rebuild_configure 1
 
 Summary:	Data Management API runtime environment
 Name:		dmapi
@@ -56,7 +58,8 @@ make configure
 %make
 
 %install
-%makeinstall_std
+# cant use make install_std due to INSTALL
+make install DESTDIR=%{buildroot}
 make install-dev DIST_ROOT=%{buildroot}/
 
 # (sb) installed but unpackaged files
