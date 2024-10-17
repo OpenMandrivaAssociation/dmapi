@@ -11,7 +11,7 @@ Version:	2.2.12
 Release:	9
 License:	LGPLv2 and GPLv2
 Group:		System/Kernel and hardware
-URL:		http://oss.sgi.com/projects/xfs/
+URL:		https://oss.sgi.com/projects/xfs/
 Source0:	ftp://oss.sgi.com/projects/xfs/cmd_tars/%{name}-%{version}.tar.gz
 BuildRequires:	pkgconfig(ext2fs)
 BuildRequires:	xfsprogs-devel
