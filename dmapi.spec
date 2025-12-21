@@ -13,6 +13,11 @@ License:	LGPLv2 and GPLv2
 Group:		System/Kernel and hardware
 URL:		https://oss.sgi.com/projects/xfs/
 Source0:	ftp://oss.sgi.com/projects/xfs/cmd_tars/%{name}-%{version}.tar.gz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(ext2fs)
 BuildRequires:	xfsprogs-devel
 BuildRequires:	libtool
